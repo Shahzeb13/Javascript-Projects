@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>To do list</title>
+</head>
+<body>
+    
+    
+       
+    <div class ='main'>
+        <h2 style="
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    letter-spacing: 2px;">
+    <img src="Images/png/todo-2-32.png" alt=""> TODO
+</h2>
+        <div class = 'navbar'>
+            <ul class = 'nav' style = 'list-style-type:none;'>
+                <li><button class = 'add-btn js-add-btn'> Add</button></li>
+                <li><button class = 'delete-btn js-delete-btn'>Delete</button></li>
+                <li><button class = 'edit-btn js-edit-btn'>Edit</button>
+                </li>
+                
+            </ul> 
+        </div>
+
+
+
+        <div class = 'view'>
+           <div><input class = 'js-input' type="text" placeholder="Just do It..."></div>
+            <ul class = 'tasks js-tasks'>
+                
+                <!-- asks will show here -->
+            </ul>
+        </div>
+    </div> 
+    
+
+    <script type="module"  src = "scripts/Controller/app.js" ></script>
+</body>
+</html>

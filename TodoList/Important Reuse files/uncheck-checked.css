@@ -1,0 +1,34 @@
+task {
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    color: black;
+    font-size: 13px;
+    letter-spacing: 1px;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px; /* Adjust for checkbox */
+    width: 100%; /* Make sure it spans the container */
+}
+
+.task::before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width:16px;
+    border-radius: 50%;
+    background-image: url('../Images/png/uncheck.svg');
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-48%);
+}
+
+.task.checked::before {
+    background-image: url('../Images/png/checked.png'); /* Change to checked icon */
+}
